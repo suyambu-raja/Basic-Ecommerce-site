@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding:0;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+
+body{
+
+    font-family: "Poppins", serif;
+}
+
+
+.one{display:flex; 
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   
+    
+}
+
+
+.lists{
+    display:flex;
+    column-gap:20px;
+}
+
+
+
+
+.lists a{
+    text-decoration:none;
+    color:black
+}
+
+.lists a:hover{
+    text-decoration:underline;
+    color:black
+}
+
+.searchicon{
+    display:none;
+    margin-top:20px;
+}
+
+
+
+.two{
+
+    width:50%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.905);
+    position:fixed;
+    left:-60%;
+    transition:2s;
+    z-index:5;
+}
+
+.info a{
+    text-decoration:none;
+    color:white;
+
+}
+
+.info{
+    color:white;
+    margin:50px;
+    font-size:x-large;
+}
+
+
+.info a:hover{
+    text-decoration:double;
+    color:white;
+}
+
+
+
+.three{
+   display:flex;
+   margin-top:50px;
+   justify-content:center;
+
+}
+
+
+.four{
+    display:flex;
+    margin-top:200px;
+    justify-content:space-between;
+}
+
+
+.five{
+    display:flex;
+    margin-top:5px;
+
+}
+
+.five-one{
+    background:slategray;
+    opacity:0.9 ;
+    padding:20px;
+    padding-left:5px;
+}
+
+
+.six{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-right:80px;
+    
+  
+}
+
+.six-one{
+
+    position:relative;
+    margin:50px;
+    flex-basis:10%;
+   text-align: center;
+  
+}
+
+
+.six-button{
+    background:white;
+    padding-left:10px;
+    margin-left:-170px;
+    top:-50px;
+    position:relative;
+    z-index:3;
+    border:none;
+    border-radius:5px;
+    padding-right:10px;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+
+.six-img{
+    border-radius:10px;
+    width:250px;
+    height:250px;
+}
+
+
+.seven{
+    text-align: center;
+}
+
+
+.inp{
+
+  
+    height:35px;
+    border:solid 3px black;
+    display:block;
+    margin-left:150px;
+    width:80%;
+    margin-top:40px;
+
+}
+
+
+.sub{
+
+    margin:50px;
+    background:black;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+.sub a{
+    text-decoration: none;
+    color:white;
+}
+
+.sub a:hover{
+    text-decoration:double;
+    color:white;
+}
+
+
+.eight{
+    background:rgba(0, 0, 0, 0.796);
+    color:white;
+    width:100%;
+    height:150px;
+    margin-left:-10px;
+    margin-right:0;
+    padding-top:50px;
+    padding-right:20px;
+    
+}
+
+.eight-one{
+    margin:5px;
+}
+
+
+
+.nine{
+    display:flex;
+    justify-content:center;
+}
+
+
+
+.nine-one{
+    border:black solid 3px;
+    width:80%;
+    height:40px;
+    border-radius:20px;
+    margin-top:30px;
+    display:flex;
+    justify-content: space-between;
+ 
+}
+
+ .nine-inp{
+    width:90%;
+    border:none;
+    outline:none;
+    height:40px;
+    margin-left:20px;
+    align-items:center;
+ }
+
+
+ .six-name{
+
+    margin:3px;
+    margin-left:50px;
+    
+
+ }
+
+
+
+ .ten-one{
+
+    margin-left:150px;
+    margin-right:150px;
+    background:rgba(3, 0, 17, 0.912);
+    padding:50px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-radius:10px;
+    color:white;
+    padding-top:100px;
+    width:80%;
+    
+
+ }
+
+
+ .ten-inp{
+     width:95%;
+     height:70px;
+     border-radius:10px;
+     margin:10px;
+ }
+
+.ten-but{
+
+    display:block;
+    margin:10px;
+    padding:10px;
+    background:rgba(0, 0, 255, 0.525);
+    color:white;
+    border-radius:5px;
+    width:80px;
+}
+
+
+.three-one button a{
+    text-decoration: none;
+    color:white;
+}     
+
+
+
+
+/*media query*/
+
+@media screen and (max-width:700px)                                                           
+{
+    .lists{
+        display:none;
+    }
+
+    .searchicon{
+        display:block;
+    }
+
+    .first-image{
+
+        display:none;
+    }
+
+    .four{
+        display:none;
+    }
+
+    .five{
+        flex-direction:column;
+        
+    }
+
+    .five-one{
+        margin-top:10px;
+
+    }
+
+    .inp{
+        align-items:center;
+    }
+
+   
+   .seven-inp{
+    margin-left:-150px;
+   }
+
+   .eight{
+    padding-right:200px;
+    padding-bottom:50px;
+   }
+
+
+   .ten-one{
+        margin-left:10%;
+        margin-right:50%;
+
+   }
+   
+    
+}
+
+
