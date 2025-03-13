@@ -1,0 +1,235 @@
+<html>
+
+<head>
+
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fashora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="e-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <div class="two">
+
+        <p class="info" style="margin-left:90%">
+            <i class="fa-solid fa-Xmark" onclick="closee()" style="font-size:medium;right:50px;"></i>
+        </p>
+
+        <p class="info"><a href="ecommerce.html">Home</a></p>
+        <p class="info"><a href="eco-search.html">Collections</a></p>
+        <p class="info"><a href="eco-contacts.html">Contacts</a></p>
+
+
+    </div>
+
+
+
+    <div class="one">
+
+        <h1>
+            Fashora
+        </h1>
+
+        <div class="lists">
+            <p class="infoo"><a href="ecommerce.html">Home</a></p>
+            <p class="infoo"><a href="eco-search.html">Collections</a></p>
+            <p class="infoo"><a href="eco-contacts.html">Contacts</a></p>
+        </div>
+        <div class="searchicon">
+            <i class="fa-solid fa-bars" onclick="arise()"></i>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="nine">
+        <form class="nine-one">
+            <input type="text" class="nine-inp" placeholder="search" onkeyup="check()" id="uuu">
+            <i class="fa-solid fa-magnifying-glass" style="margin-top: 13px; "></i>
+        </form>
+    </div>
+
+
+
+
+    <div class="six">
+
+        <div class="six-one">
+            <img class="six-img" src="C:\Users\asuya\Downloads\images (5).jpg" width="300px "
+                height="300px">
+            <button class="six-button">Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            <h3 class="six-name">White Tshirt</h3>
+
+        </div>
+
+        <div class="six-one">
+            <img class="six-img" src="C:\Users\asuya\Downloads\download (2).jpg" width="300px " height="300px">
+
+            <button class="six-button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+
+            <h3 class="six-name">Brown fashion</h3>
+        </div>
+
+        <div class="six-one">
+            <img class="six-img" src="C:\Users\asuya\Downloads\whatsappimage2022-10-07at7-24-39pm-1-500x500.webp" width="300px " height="300px">
+            <button class="six-button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+
+            <h3 class="six-name">Blue hoodie</h3>
+        </div>
+
+        <div class="six-one">
+            <img class="six-img" src="C:\Users\asuya\Downloads\images (19).jpg" width="300px " height="300px">
+            <button class="six-button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+
+            <h3 class="six-name">Black Tshirts</h3>
+        </div>
+
+
+        <div class="six-one">
+            <img class="six-img" src="C:\Users\asuya\Downloads\download (1).jpg" width="300px " height="300px">
+            <button class="six-button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+
+            <h3 class="six-name">grey hoodie</h3>
+        </div>
+
+        <div class="six-one">
+            <img class="six-img" src="C:\Users\asuya\Downloads\images (2).jpg" width="300px " height="300px">
+
+            <button class="six-button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+
+            <h3 class="six-name">Green shirt</h3>
+        </div>
+
+        <div class="six-one">
+            <img class="six-img" src="C:\Users\asuya\Downloads\download.jpg" width="300px " height="300px">
+            <button class="six-button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+
+            <h3 class="six-name">Black hoodie</h3>
+        </div>
+
+        <div class="six-one">
+            <img class="six-img" src="C:\Users\asuya\Downloads\images (12).jpg" width="300px " height="300px">
+            <button class="six-button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+
+            <h3 class="six-name">Tshirt</h3>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+<script>
+
+
+
+
+
+    var one = document.querySelector(".one")
+    var searchicon = document.querySelector(".searchicon")
+    var two = document.querySelector(".two")
+
+
+
+
+    function arise() {
+        two.style.left = "0"
+
+
+    }
+
+    function closee() {
+        two.style.left = "-60%"
+    }
+
+
+
+
+
+    var six = document.querySelector(".six")
+
+
+
+    var elements = six.querySelectorAll(".six-one")
+
+    var texts = ""
+
+
+
+    function check() {
+        texts = uuu.value.toUpperCase()
+
+        for (var i = 0; i <= elements.length; i++) {
+            if (elements[i].textContent.toUpperCase().indexOf(texts) < 0) {
+                elements[i].style.display = "none"
+            }
+
+
+            else {
+                elements[i].style.display = "block"
+            }
+
+
+
+
+        }
+
+
+
+    }
+
+
+
+
+
+    var six = document.querySelector(".six")
+    var six_one = six.querySelectorAll(".six-one")
+
+
+    for (var i=0;i<six_one.length;i++)
+    {
+    var six_button = six_one[i].querySelector("button")
+
+    six_button.addEventListener("click", function() 
+    {
+
+        alert("NO stack available")
+    })
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
+</html>
